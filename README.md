@@ -23,11 +23,11 @@
 | name               | string      | null: false                    |
 | content            | text        | null: false                    |
 | category_id        | integer     | null: false                    |
-| price_id           | integer     | null: false                    |
+| price              | integer     | null: false                    |
 | quality_id         | integer     | null: false                    |
 | shipping_charge_id | integer     | null: false                    |
 | shipment_source_id | integer     | null: false                    |
-| date_shipment      | string      | null: false                    |
+| date_shipment_id   | integer     | null: false                    |
 | user               | references  | null: false, foreign_key: true |
 
 ### Association
