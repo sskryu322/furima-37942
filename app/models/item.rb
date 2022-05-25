@@ -6,6 +6,7 @@ class Item < ApplicationRecord
   belongs_to :shipment_source
   belongs_to :date_shipment
   belongs_to :user
+  has_one :purchase_record
   has_one_attached :image
 
   validates :name, presence: true, length: { maximum: 40 }
