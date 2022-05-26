@@ -5,7 +5,7 @@ class PurchaseAddress
   with_options presence: true do
     validates :postal_code, format: {with: /\A[0-9]{3}-[0-9]{4}\z/, message: "is invalid. Include hyphen(-)"}
     validates :shipment_source_id, numericality: { other_than: 1, message: "can't be blank"}
-    validates :telephone_number, format: { with: /\d{10,11}/ }
+    validates :telephone_number, format: { with: /\A[0-9]{10,11}\z/}
     validates :municipality, :address, :user_id, :item_id
   end
   
