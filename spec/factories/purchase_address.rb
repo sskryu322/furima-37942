@@ -6,5 +6,7 @@ FactoryBot.define do
     address { '1-1' }
     building_name { '東京ハイツ' }
     telephone_number { Faker::Number.between(from: 1111111111, to: 99999999999) }
+    token {"tok_abcdefghijk00000000000000000"}
+    
   end
 end
