@@ -10,8 +10,8 @@ class User < ApplicationRecord
   with_options presence: true do
     validates :last_name, format: { with: /\A[ぁ-んァ-ヶ一-龥々ー]+\z/ }
     validates :first_name, format: { with: /\A[ぁ-んァ-ヶ一-龥々ー]+\z/ }
-    validates :last_name_pseudonym_reading, format: { with: /\A[ァ-ヶ一]+\z/ }
-    validates :first_name_pseudonym_reading, format: { with: /\A[ァ-ヶ一]+\z/ }
+    validates :last_name_pseudonym_reading, format: { with: /\A[ァ-ヶー－]+\z/ }
+    validates :first_name_pseudonym_reading, format: { with: /\A[ァ-ヶー－]+\z/ }
     validates :nickname, :birthday
   end
 
